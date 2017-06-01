@@ -6,6 +6,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Anton|Audiowide|Bangers|Ceviche+One|Cinzel|Combo|Freckle+Face|Lobster+Two|Love+Ya+Like+A+Sister|Nova+Oval|Orbitron|Passion+One|Press+Start+2P|Ubuntu+Condensed"
         rel="stylesheet">
     <style>
@@ -15,6 +17,7 @@
             top: 50%;
             position: relative;
             transform: translateY(-50%);
+            opacity: 0.7;
         }
 
         h4 {
@@ -26,6 +29,12 @@
         }
 
         .projects {
+            display: inline-block;
+            padding: 3px;
+        }
+
+
+        .sidebyside {
             display: inline-block;
         }
 
@@ -45,10 +54,26 @@
             font-size: 16pt;
             /*border: solid;*/
         }
+        /* Style all font awesome icons */
 
-        .sidebyside {
-            display: inline-block;
-            margin: 15px;
+        .fa {
+            padding: 20px;
+            /*font-size: 30px;
+            width: 50px;*/
+            text-align: center;
+            text-decoration: none;
+            color: teal;
+        }
+        /* Add a hover effect if you want */
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 200px;
         }
 
         #name {}
@@ -61,12 +86,21 @@
         #skillsets {
             /*display: inline-block;*/
             margin: auto;
-            padding: 100px;
+            padding: 200px;
         }
 
         #frontEnd {
             margin: auto;
-            padding: 100px;
+            padding: 200px;
+        }
+
+        #uxDesign {
+            margin: auto;
+            padding: 200px;
+        }
+
+        #hire {
+            margin: auto;
         }
 
         ul {
@@ -97,10 +131,10 @@
                     <li><a href="index.html">Home</a></li>
                     <!--<li><a href="#"class='dropdown-button' data-activates='dropdown1'>Projects</a></li>-->
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skillsets">Skills</a></li>
+                    <li><a href="#skillsets">Skill Sets</a></li>
                     <li><a href="#frontEnd">Front-end</a></li>
                     <li><a href="#uxDesign">UX Design</a></li>
-                    <li><a href="#contact">Hire</a></li>
+                    <li><a href="#hire">Hire</a></li>
                 </ul>
             </div>
         </nav>
@@ -114,7 +148,7 @@
 
     <div class="projects">
 
-        <div id="feproject">
+        <div id="feproject" class="sidebyside">
             <!-- Dropdown Trigger -->
             <a class='dropdown-button btn sidebyside' href='#' data-activates='dropdown1'>Front-end Projects</a>
 
@@ -131,7 +165,7 @@
             </ul>
         </div>
 
-        <div id="uxproject">
+        <div id="uxproject" class="sidebyside">
             <!-- Dropdown Trigger -->
             <a class='dropdown-button btn sidebyside' href='#' data-activates='dropdown2'>UX Projects</a>
 
@@ -163,7 +197,7 @@
     </div>
 
     <div id="skillsets" class="container">
-        <h5>Skillsets</h5>
+        <h5>Skill Sets</h5>
         <hr>
 
         <div class="frontend">
@@ -192,25 +226,7 @@
     </div>
 
     <div id="frontEnd" class="container">
-        <h5>Front-end Development</h5>
-        <hr>
-
-        <div class="uxprojects">
-            <h5>Front-end Development</h5>
-            <hr>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>jquery</li>
-                <li>Bootstrap</li>
-                <li>Materialize</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="uxDesign" class="container">
-        <h5>UX Design</h5>
+        <h5>Front-end Projects</h5>
         <hr>
         <ul>
             <li>HTML5</li>
@@ -223,6 +239,28 @@
     </div>
     </div>
 
+    <div id="uxDesign" class="container">
+        <h5>UX Design Projects</h5>
+        <hr>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>jquery</li>
+            <li>Bootstrap</li>
+            <li>Materialize</li>
+        </ul>
+    </div>
+    </div>
+
+    <footer>
+        <div id="hire" class="container">
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-github fa-5x"></a>
+            <a href="#" class="fa fa-linkedin fa-5x"></a>
+            <a href="#" class="fa fa-envelope fa-5x"></a>
+        </div>
+    </footer>
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer">
